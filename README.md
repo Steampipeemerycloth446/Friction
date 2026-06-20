@@ -1,4 +1,4 @@
-# Friction R3 'Apex' | Friction - Scroll Awareness beta v1.1.2
+# Friction R4 'Clarity' | Friction - Scroll Awareness v1.2.1
 
 ![Friction Logo](logo.png)
 
@@ -12,7 +12,7 @@
 
 Friction is an Android application designed to reduce doomscrolling through intentional friction. It imposes resistance on social media platforms, converting unconscious scrolling into mindful digital behavior.
 
-Friction R3 'Apex' delivers refined scroll detection, multi-layered friction strategies, and a minimalist interface focused on digital wellness.
+Friction R4 'Clarity' delivers refined scroll detection, multi-layered friction strategies, and a minimalist interface focused on digital wellness.
 
 **Break the scroll. Reclaim your focus.**
 
@@ -52,9 +52,19 @@ Friction R3 'Apex' delivers refined scroll detection, multi-layered friction str
 - Clean setup flow for limit configuration
 - Dashboard showing remaining scrolls and lag mode status
 
+## What's New
+
+### R4 'Clarity' - UI Localization Release
+- **Complete UI English localization**: All Turkish strings converted to professional English
+  - Setup screen: "Welcome", "Set your daily scroll limit", "Set and Lock"
+  - Dashboard: "Remaining Scrolls", "Lag Mode", "Service", "Daily Limit", "Locked"
+  - Action buttons: "Grant Accessibility Permission", "Disable Battery Optimization"
+- **Improved notification text**: "Friction Active", "Scroll awareness is running"
+- **Enhanced user messaging**: Clearer instructions and status indicators
+
 ## Installation
 
-1. Download and install the APK on Android 8.0+ (API 26+)
+1. Download and install `friction-r4.apk` on Android 8.0+ (API 26+)
 2. Grant Accessibility Service permission via Settings > Accessibility
 3. Disable battery optimizations for uninterrupted operation
 4. Configure your daily scroll limit during first launch (locked after initial setup)
