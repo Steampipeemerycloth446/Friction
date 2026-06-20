@@ -117,4 +117,6 @@ This software is provided "as is" without warranty of any kind, express or impli
 - **Third-party Applications**: Friction modifies scroll behavior in third-party applications. Functionality may be affected by updates to those applications.
 - **Limitation of Liability**: The developers shall not be liable for any damages, including but not limited to device performance issues, battery drain, or data loss.
 - **Use at Your Own Risk**: You assume full responsibility for using this application. Disable Play Protect scanning as described above to prevent interference.
-- **Intellectual Property**: This application is proprietary software. Reverse engineering, decompilation, or unauthorized distribution is strictly prohibited. All rights reserved.
+- **Open Source Copyleft**: This application is open-source software licensed under the **GNU General Public License v3.0 (GPLv3)**. You are free to inspect, share, and distribute this software as long as all derivative works remain strictly open-source and free under the same license terms.
+- **Project Ownership**: This project and all associated assets are fully owned and developed by **MEK Technologies**. While the software is open-source under the GPLv3 license, the MEK Technologies name, branding, and original architecture remain the exclusive intellectual property of the organization.
+  
