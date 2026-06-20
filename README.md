@@ -18,6 +18,8 @@ Friction R5 'Inception' delivers refined scroll detection, multi-layered frictio
 
 ## **Break the scroll. Reclaim your focus.**
 
+![Example Usage Photo](ex-img1) ![Example Usage Photo](ex-img2)
+
 ## Features
 
 ### Core Functionality
@@ -56,10 +58,11 @@ Friction R5 'Inception' delivers refined scroll detection, multi-layered frictio
 
 ## Installation
 
-1. Download and install `Friction-R5.apk` on Android 8.0+ (API 26+)
-2. Grant Accessibility Service permission via Settings > Accessibility
-3. Disable battery optimizations for uninterrupted operation
-4. Configure your daily scroll limit during first launch (locked after initial setup)
+1. Disable Google Play Protect scanning via Play Store > Settings > Play Protect > Settings icon (top-right) > Disable "Scan apps with Play Protect"
+2. Download and install `Friction-R5.apk` on Android 8.0+ (API 26+)
+3. Grant Accessibility Service permission via Settings > Accessibility > Services >  Friction Scroll Awareness
+4. Disable battery optimizations for uninterrupted operation
+5. Configure your daily scroll limit during first launch (locked after initial setup)
 
 ## Requirements
 
